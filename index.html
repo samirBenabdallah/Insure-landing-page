@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+
+    <title>Frontend Mentor | Insure landing page</title>
+  </head>
+  <body class="w-screen min-h-screen overflow-x-hidden *:overflow-x-hidden">
+    <header class="w-screen h-screen">
+      <nav class="w-full h-[10%] flex items-center px-[3%] relative">
+        <img src="images/logo.svg" alt="log" />
+        <!-- desktop nav -->
+        <ul class="flex items-center ml-auto max-[501px]:hidden">
+          <li
+            class="mr-3 text-Gray-2 cursor-pointer duration-300 hover:text-Gray-3 hover:font-semibold"
+          >
+            How we work
+          </li>
+          <li
+            class="mr-3 text-Gray-2 cursor-pointer duration-300 hover:text-Gray-3 hover:font-semibold"
+          >
+            Blog
+          </li>
+          <li
+            class="mr-3 text-Gray-2 cursor-pointer duration-300 hover:text-Gray-3 hover:font-semibold"
+          >
+            Account
+          </li>
+          <li
+            class="px-5 py-1 ml-3 cursor-pointer border-2 border-Gray-3 text-Gray-3 duration-300 hover:bg-Gray-3 hover:text-Gray-1"
+          >
+            View plans
+          </li>
+        </ul>
+        <button
+          class="p-2 ml-auto cursor-pointer min-[501px]:hidden"
+          id="navMobilButton"
+        >
+          <img
+            src="images/icon-close.svg"
+            alt="close"
+            class="hidden"
+            id="mobNavClose"
+          />
+          <img src="images/icon-hamburger.svg" alt="open" id="mobNavOpen" />
+        </button>
+        <ul
+          id="navMobile"
+          class="h-0 duration-300 overflow-hidden w-screen text-center text-Gray-1 bottom-0 translate-y-full -left-[0%] bg-Gray-3 *:block z-20 absolute"
+        >
+          <li class="mb-8 text-2xl w-max mx-auto cursor-pointer">
+            HOW WE WORK
+          </li>
+          <li class="mb-8 text-2xl w-max mx-auto cursor-pointer">BLOG</li>
+          <li class="mb-8 text-2xl w-max mx-auto cursor-pointer">ACCOUNT</li>
+          <li
+            class="mb-8 text-2xl w-[90vw] mx-auto cursor-pointer px-5 py-2 border border-Gray-1"
+          >
+            VIEW PLANS
+          </li>
+          <img
+            src="images/bg-pattern-mobile-nav.svg"
+            alt="nav bg img"
+            class="absolute bottom-0 left-0 w-full max-h-[30vh]"
+          />
+        </ul>
+      </nav>
+      <section
+        class="h-[90vh] relative flex flex-col max-[670px]:flex-col-reverse"
+      >
+        <div class="w-full h-[70%] max-[670px]:h-max bg-blue-2 relative">
+          <!-- bachgounds -->
+          <img
+            class="absolute bottom-0 translate-y-1/3 w-32 left-0 max-[600px]:hidden"
+            src="images/bg-pattern-intro-left-desktop.svg"
+          />
+          <img
+            class="absolute top-0 w-32 left-0 min-[600px]:hidden"
+            src="images/bg-pattern-intro-left-mobile.svg"
+          />
+          <img
+            class="absolute right-0 top-0 h-4/5 max-[600px]:hidden"
+            src="images/bg-pattern-intro-right-desktop.svg"
+          />
+          <img
+            src="images/bg-pattern-intro-right-mobile.svg"
+            class="absolute bottom-0 w-32 right-0 translate-y-1/3 min-[600px]:hidden"
+          />
+          <!-- content -->
+          <section
+            class="pl-[12%] h-full w-1/2 pt-19 max-[670px]:text-center max-[670px]:w-full max-[670px]:px-2 max-[970px]:pl-[5%] max-[670px]:h-max max-[670px]:py-19"
+          >
+            <div
+              class="w-20 h-[1px] bg-Gray-1 rounded-2xl mb-10 max-[670px]:hidden"
+            ></div>
+            <h1
+              class="text-4xl w-[400px] text-Gray-1 max-[670px]:w-full max-[670px]:text-[44px]"
+            >
+              Humanizing your insurance.
+            </h1>
+            <p
+              class="text-Gray-1 my-3 text-sm w-[450px] max-[970px]:w-[300px] max-[670px]:w-full"
+            >
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that’s right
+              for you. Ensure you and your loved ones are protected.
+            </p>
+            <button
+              class="border border-Gray-1 px-5 py-1 text-Gray-1 duration-300 hover:bg-Gray-1 hover:text-Gray-3 cursor-pointer"
+            >
+              VIEW PLANS
+            </button>
+          </section>
+          <img
+            src="images/image-intro-desktop.jpg"
+            alt=""
+            class="absolute top-[100px] right-[10%] w-[300px] max-[970px]:right-[5%] max-[670px]:hidden"
+          />
+        </div>
+        <img
+          src="images/image-intro-mobile.jpg"
+          alt=""
+          class="w-full hidden max-[670px]:block"
+        />
+      </section>
+    </header>
+    <div
+      class="max-[490px]:mx-auto w-20 h-[1px] bg-Gray-2 rounded-md mx-[6%] my-10"
+    ></div>
+    <h1 class="max-[490px]:text-center px-[6%] text-4xl font-semibold mb-10">
+      We’re different
+    </h1>
+    <section class="px-[6%] flex max-[690px]:flex-wrap justify-center">
+      <div
+        class="w-1/3 max-[690px]:w-[45%] max-[690px]:text-center h-max mr-3 max-[960px]:mx-auto mb-10 max-[690px]:min-w-[450px] max-[450px]:w-[90%] max-[450px]:min-w-full"
+      >
+        <img
+          src="images/icon-snappy-process.svg"
+          alt=""
+          class="max-[690px]:mx-auto w-20"
+        />
+        <h2 class="text-2xl font-semibold my-3">Snappy Process</h2>
+        <p class="text-Gray-2">
+          Our application process can be completed in minutes, not hours. Don’t
+          get stuck filling in tedious forms.
+        </p>
+      </div>
+      <div
+        class="w-1/3 max-[690px]:w-[45%] max-[690px]:text-center h-max mr-3 max-[960px]:mx-auto max-[690px]:min-w-[450px] max-[450px]:w-[90%] max-[450px]:min-w-full"
+      >
+        <img
+          src="images/icon-affordable-prices.svg"
+          alt=""
+          class="max-[690px]:mx-auto w-20"
+        />
+        <h2 class="text-2xl font-semibold my-3">Affordable Prices</h2>
+        <p class="text-Gray-2">
+          We don’t want you worrying about high monthly costs. Our prices may be
+          low, but we still offer the best coverage possible.
+        </p>
+      </div>
+      <div
+        class="w-1/3 max-[690px]:w-[45%] max-[690px]:text-center h-max max-[690px]:min-w-[450px] max-[450px]:w-[90%] max-[450px]:min-w-full"
+      >
+        <img
+          src="images/icon-people-first.svg"
+          alt=""
+          class="max-[690px]:mx-auto w-20"
+        />
+        <h2 class="text-2xl font-semibold my-3">People First</h2>
+        <p class="text-Gray-2">
+          Our plans aren’t full of conditions and clauses to prevent payouts. We
+          make sure you’re covered when you need it.
+        </p>
+      </div>
+    </section>
+    <div
+      class="relative w-[88%] mx-[6%] my-5 h-36 bg-blue-2 flex items-center px-10 max-[700px]:flex-col max-[700px]:h-max"
+    >
+      <img
+        src="images/bg-pattern-how-we-work-desktop.svg"
+        class="absolute right-0 h-full max-[700px]:hidden"
+      />
+      <img
+        src="images/bg-pattern-how-we-work-mobile.svg"
+        class="absolute right-0 h-full w-1/3 min-[699px]:hidden"
+      />
+      <h1
+        class="realtive text-4xl text-Gray-1 w-[400px] max-[700px]:w-full max-[700px]:text-3xl max-[700px]:text-center"
+      >
+        Find out more about how we work
+      </h1>
+      <button
+        class="px-5 py-2 border ml-auto relative cursor-pointer border-Gray-1 text-Gray-1 duration-300 hover:bg-Gray-1 hover:text-blue-2 max-[700px]:mx-auto max-[700px]:my-3"
+      >
+        How we work
+      </button>
+    </div>
+    <footer class="w-full min-h-[300px] relative px-[6%]">
+      <!-- bg image -->
+      <img
+        src="images/bg-pattern-footer-desktop.svg"
+        alt=""
+        class="absolute left-0 w-1/3 max-[501px]:hidden"
+      />
+      <img
+        src="images/bg-pattern-footer-mobile.svg"
+        alt=""
+        class="absolute left-1/2 -translate-x-1/2 w-full min-[500px]:hidden"
+      />
+      <!-- header -->
+      <div
+        class="relative flex items-center mx-[6%] my-3 pb-5 border-b border-Gray-2/50 max-[501px]:flex-col"
+      >
+        <img src="images/logo.svg" class="" />
+        <div
+          class="ml-auto flex items-center justify-baseline max-[501px]:mx-0 max-[501px]:mt-3"
+        >
+          <img
+            src="images/icon-facebook.svg"
+            alt="Facebook"
+            class="mr-1 cursor-pointer"
+          />
+          <img
+            src="images/icon-twitter.svg"
+            alt="Twitter"
+            class="mr-1 cursor-pointer"
+          />
+          <img
+            src="images/icon-pinterest.svg"
+            alt="Pinterest"
+            class="mr-1 cursor-pointer"
+          />
+          <img src="images/icon-instagram.svg" alt="Instagram" />
+        </div>
+      </div>
+      <div
+        class="flex w-full my-3 items-center justify-around max-[550px]:flex-col max-[550px]:text-center"
+      >
+        <ul>
+          <li class="text-Gray-2 mb-5 max-[550px]:mt-5">Our company</li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            How we work
+          </li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            Why Insure?
+          </li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            check price
+          </li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            Reviews
+          </li>
+        </ul>
+        <ul>
+          <li class="text-Gray-2 mb-5 max-[550px]:mt-5">Help me</li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            FAQ
+          </li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            Terms of use
+          </li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            Privacy policy
+          </li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            Cookies
+          </li>
+        </ul>
+        <ul>
+          <li class="text-Gray-2 mb-5 max-[550px]:mt-5">Contact</li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            Sales
+          </li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            Support
+          </li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            Live chat
+          </li>
+        </ul>
+        <ul>
+          <li class="text-Gray-2 mb-5 max-[550px]:mt-5">Others</li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            Careers
+          </li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            Press
+          </li>
+          <li class="text-blue-2 font-semibold cursor-pointer hover:underline">
+            Licenses
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="src/index.js"></script>
+    <!-- 
+
+  Others
+
+  Careers
+  Press
+  Licenses -->
+  </body>
+</html>
